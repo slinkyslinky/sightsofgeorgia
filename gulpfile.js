@@ -35,7 +35,11 @@ export const path = {
             `${srcFolder}/pages/404/404.html`,
 
         ],
-        styles: `${srcFolder}/pages/**/*.scss`,
+        styles: [
+            `${srcFolder}/styles/*.scss`,
+            `${srcFolder}/pages/**/*.scss`,
+
+        ],
         scripts: [
             `${srcFolder}/pages/**/*.js`,
             `!${srcFolder}/pages/index/index.js`,

@@ -17,10 +17,12 @@ export default function styles() {
     return gulp.src(path.src.styles, { sourcemaps: isDev })
         .pipe(sassGlob())
         .pipe(sass())
+
         .pipe(autoprefixer())
         .pipe(shorthand())
-        .pipe(webpCss())
+
         .pipe(concat('index.css'))
+        .pipe(webpCss())
         .pipe(groupMediaQueries())
         .pipe(gulpIf(isProd, csso()))
         .pipe(gulp.dest(path.build.styles, { sourcemaps: isDev }))

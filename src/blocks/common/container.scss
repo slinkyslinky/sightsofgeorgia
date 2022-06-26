@@ -1,0 +1,10 @@
+.container {
+    width: 100%;
+    max-width: $containerMaxSize;
+    margin: 0 auto;
+    padding: $sectionsDist 0;
+}
+
+.container--little {
+    max-width: $littleContainerMaxSize;
+}

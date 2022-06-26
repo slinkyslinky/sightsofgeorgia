@@ -1,0 +1,32 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    color: $mainColor;
+
+    font-size: 18px;
+    padding: 62px 0;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 47%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: $mainColor;
+    }
+
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}

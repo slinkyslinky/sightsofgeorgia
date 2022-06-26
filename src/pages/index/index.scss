@@ -1,2 +1,18 @@
-@import '../../blocks/head/head.scss';
+@import '../../blocks/common/variables.scss';
+
+@import '../../blocks/common/container.scss';
+@import '../../blocks/main/main.scss';
+@import '../../blocks/nav/nav.scss';
+@import '../../blocks/button/button.scss';
+@import '../../blocks/main/search/search.scss';
 @import '../../blocks/input/input.scss';
+
+
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: $mainColor;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+}

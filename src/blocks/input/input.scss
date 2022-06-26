@@ -1,0 +1,44 @@
+input {
+    background: none;
+    padding: 0 10px 0 30px;
+    text-align: center;
+
+    color: $mainColor;
+    font-size: 18px;
+    font-weight: 500px;
+    min-width: 300px;
+    height: 65px;
+    border-bottom: 2px solid $mainColor;
+    margin-right: 60px;
+    overflow: hidden;
+
+
+    &::placeholder {
+        color: $mainColor;
+    }
+
+
+
+}
+
+.input {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        color: $mainColor;
+        border: 2px solid $mainColor;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+
+
+    }
+}

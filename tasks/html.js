@@ -10,7 +10,7 @@ import { path, isProd } from '../gulpfile.js'
 export default function html() {
     return gulp.src(path.src.html)
         .pipe(include({
-            prefix: '@@',
+            prefix: ['@@'],
             basepath: '@root'
         }))
         .pipe(webpHtml())
