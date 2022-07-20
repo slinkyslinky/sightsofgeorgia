@@ -1,0 +1,33 @@
+@import '../common/flex-wrapper.scss';
+
+.container--benifits {
+    position: relative;
+
+    background-color: $mainColor;
+    height: 100%;
+    padding: 0 $containerMaxSize - $littleContainerMaxSize;
+
+
+}
+
+.benefits {
+    display: block;
+
+    margin: -224px 0 $sectionsDist 0;
+
+
+    .container {
+        background-color: $mainColor;
+        height: 100%;
+        // ctrl + k ctrl + shift + s
+        padding: 93px calc(($containerMaxSize - $littleContainerMaxSize) / 2);
+        box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.23);
+    }
+
+    &__wrapper {
+        @include flex-wrapper(row, space-between, center)
+    }
+
+}
+
+@import './__item/__item.scss';

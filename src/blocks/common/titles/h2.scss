@@ -1,0 +1,25 @@
+h2 {
+    font-weight: 500;
+    font-size: 35px;
+    color: $secondColor;
+}
+
+.h2__main {
+    margin-bottom: 120px;
+    font-weight: 700;
+}
+
+.h2--decorated {
+    position: relative;
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        width: 253px;
+        height: 2px;
+        background-color: $accentColor;
+    }
+}

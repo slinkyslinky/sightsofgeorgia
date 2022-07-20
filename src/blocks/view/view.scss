@@ -1,0 +1,18 @@
+.view {
+    @import '../../blocks/view/__item/__item.scss';
+
+    &__item:nth-child(even) {
+        flex-direction: row-reverse;
+
+        picture {
+            padding-left: 20px
+        }
+    }
+
+    &__item:nth-child(odd) {
+        picture {
+            padding-right: 20px
+        }
+
+    }
+}

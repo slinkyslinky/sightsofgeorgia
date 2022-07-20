@@ -1,0 +1,38 @@
+.view__item {
+
+    @include flex-wrapper (row, space-between, center, no-wrap);
+
+    color: $articleColor;
+    margin-bottom: 80px;
+
+
+    picture {
+        width: 600px;
+        height: 355px;
+
+    }
+
+    img {
+        min-width: 450px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    article {
+        max-width: 600px;
+        color: $secondColor;
+        padding: 0 44px;
+    }
+
+    p {
+        margin-bottom: 58px;
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 85px;
+    }
+
+}

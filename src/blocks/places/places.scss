@@ -1,0 +1,12 @@
+@import './__item/__item.scss';
+
+.places {
+    h2 {
+        margin-bottom: 46px;
+    }
+
+    &__content-wrapper {
+        @include flex-wrapper(row, space-between, center, wrap);
+        gap: 18px;
+    }
+}

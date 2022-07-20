@@ -5,6 +5,7 @@ import styles from './styles.js'
 import scripts from './scripts.js'
 import images from './images.js'
 import fonts from './fonts.js'
+import videos from './videos.js'
 import { path } from '../gulpfile.js'
 
 export default function serve() {
@@ -17,4 +18,5 @@ export default function serve() {
     gulp.watch(path.watch.scripts, gulp.series(scripts)).on('change', sync.reload)
     gulp.watch(path.watch.images, gulp.series(images)).on('change', sync.reload)
     gulp.watch(path.watch.fonts, gulp.series(fonts)).on('change', sync.reload)
+    gulp.watch(path.watch.videos, gulp.series(videos)).on('change', sync.reload)
 }

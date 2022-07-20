@@ -1,0 +1,24 @@
+footer {
+    background-color: $footerColor;
+
+    .container {
+        padding: $sectionsDist 47px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__info {
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        gap: 120px;
+
+        li {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        ;
+    }
+}

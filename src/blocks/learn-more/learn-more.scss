@@ -1,0 +1,21 @@
+.learn-more {
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    color: $accentColor;
+    text-decoration: none;
+
+
+
+}
+
+.arrow {
+    display: inline-block;
+    width: 33px;
+    height: 8px;
+    background-color: $accentColor;
+    border: 1px solid $accentColor;
+    clip-path: polygon(0 37%, 75% 37%, 75% 0, 100% 50%, 75% 100%, 75% 63%, 0 63%);
+    margin-left: 26px;
+
+}

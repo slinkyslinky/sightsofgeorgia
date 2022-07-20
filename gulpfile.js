@@ -24,6 +24,7 @@ export const path = {
         scripts: `${buildFolder}/scripts/`,
         fonts: `${buildFolder}/fonts/`,
         images: `${buildFolder}/images/`,
+        videos: `${buildFolder}/videos/`,
 
     },
     src: {
@@ -47,6 +48,7 @@ export const path = {
         ],
         fonts: `${srcFolder}/fonts/*.{ttf,otf,eot,otc,ttc,woff,woff2,svg}`,
         images: `${srcFolder}/images/*.{png,jpg,jpeg,gif,svg}`,
+        videos: `${srcFolder}/videos/*.{mp4,webm,wav,ovg}`,
     },
     watch: {
         html: `${srcFolder}/**/*.html`,
@@ -58,6 +60,7 @@ export const path = {
 
         fonts: `${srcFolder}/fonts/**/*.{ttf,otf,eot,otc,ttc,woff,woff2,svg}`,
         images: `${srcFolder}/images/**/*.{png,jpg,jpeg,gif,svg}`,
+        videos: `${srcFolder}/videos/**/*.{mp4,webm,wav,ovg}`,
     },
     clear: buildFolder,
     buildFolder: buildFolder,
@@ -75,11 +78,12 @@ import images from "./tasks/images.js"
 import scripts from "./tasks/scripts.js"
 import styles from "./tasks/styles.js"
 import serve from "./tasks/serve.js"
+import videos from "./tasks/videos.js"
 
 const dev = () => {
     return gulp.series(
         clear,
-        gulp.parallel(html, styles, scripts, images, fonts),
+        gulp.parallel(html, styles, scripts, images, fonts, videos),
         serve
     )
 }
@@ -87,7 +91,7 @@ const dev = () => {
 const build = () => {
     return gulp.series(
         clear,
-        gulp.parallel(html, styles, scripts, images, fonts),
+        gulp.parallel(html, styles, scripts, images, fonts, videos),
 
     )
 }

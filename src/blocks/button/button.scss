@@ -1,11 +1,11 @@
 button {
-    font: 300 16px/1.6 "Lato", Arial, Helvetica, sans-serif;
+    font: 400 16px/1.6 "Lato", Arial, Helvetica, sans-serif;
     color: white;
-    width: 170px;
-    height: 58px;
+    width: 118px;
+    height: 42px;
     background-color: $accentColor;
     text-transform: uppercase;
-
+    cursor: pointer;
 
 
 }
@@ -13,4 +13,6 @@ button {
 .button--big {
     font-weight: 500;
     font-size: 24px;
+    width: 170px;
+    height: 58px;
 }
