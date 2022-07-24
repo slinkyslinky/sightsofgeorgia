@@ -10,6 +10,26 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/blocks/input/input.js":
+/*!***********************************!*\
+  !*** ./src/blocks/input/input.js ***!
+  \***********************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n\n\n//# sourceURL=webpack://gulp/./src/blocks/input/input.js?");
+
+/***/ }),
+
+/***/ "./src/blocks/video/video.js":
+/*!***********************************!*\
+  !*** ./src/blocks/video/video.js ***!
+  \***********************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\nconst playButton = document.getElementById('play')\r\nconst video = document.getElementById('video')\r\nplayButton.addEventListener('click', () => {\r\n   playButton.style = 'display:none'\r\n   video.play()\r\n   video.setAttribute('controls', '')\r\n\r\n   video.addEventListener('ended', () => {\r\n      video.load()\r\n      playButton.style = 'display:block'\r\n      video.removeAttribute('controls', '')\r\n   })\r\n\r\n})\n\n//# sourceURL=webpack://gulp/./src/blocks/video/video.js?");
+
+/***/ }),
+
 /***/ "./src/pages/index/index.js":
 /*!**********************************!*\
   !*** ./src/pages/index/index.js ***!
@@ -42,6 +62,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n\n\n//# sourceURL=webpack://g
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	__webpack_modules__["./src/blocks/input/input.js"](0, {}, __webpack_require__);
+/******/ 	__webpack_modules__["./src/blocks/video/video.js"](0, {}, __webpack_require__);
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/pages/index/index.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	

@@ -5,7 +5,9 @@
     color: $accentColor;
     text-decoration: none;
 
-
+    &:hover {
+        color: $accentColorHover;
+    }
 
 }
 
@@ -18,4 +20,7 @@
     clip-path: polygon(0 37%, 75% 37%, 75% 0, 100% 50%, 75% 100%, 75% 63%, 0 63%);
     margin-left: 26px;
 
+    &:hover {
+        background-color: $accentColorHover;
+    }
 }

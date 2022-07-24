@@ -18,6 +18,22 @@ nav {
         align-items: center;
     }
 
+    li {
+        position: relative;
+        padding: 0 4px
+    }
+
+    li:hover::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $accentColorHover;
+        animation: li-hover 0.2s;
+    }
+
     a {
         text-decoration: none;
         color: $mainColor;
@@ -29,4 +45,14 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 0;
+}
+
+@keyframes li-hover {
+    from {
+        background-color: transparent
+    }
+
+    to {
+        background-color: $accentColorHover;
+    }
 }

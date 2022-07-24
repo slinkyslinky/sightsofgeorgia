@@ -43,6 +43,7 @@ export const path = {
         ],
         scripts: [
             `${srcFolder}/pages/**/*.js`,
+            `${srcFolder}/**/*.js`,
             `!${srcFolder}/pages/index/index.js`,
             `${srcFolder}/pages/index/index.js`,
         ],
@@ -56,6 +57,7 @@ export const path = {
         scripts: [
             `${srcFolder}/pages/**/*.js`,
             `${srcFolder}/modules/**/*.js`,
+            `${srcFolder}/**/*.js`,
         ],
 
         fonts: `${srcFolder}/fonts/**/*.{ttf,otf,eot,otc,ttc,woff,woff2,svg}`,
